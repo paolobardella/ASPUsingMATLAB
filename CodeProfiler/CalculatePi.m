@@ -1,5 +1,4 @@
-%Goal: maximize the number of considered points per second
-tic
+function Pi=CalculatePi
 NumSamples=10000;
 R=0.5; 
 Inside=0;
@@ -17,5 +16,3 @@ for k=1:NumSamples
     
 end
 Pi=4*Inside/NumSamples;
-fprintf('You analyzed %g points per second\n',NumSamples/toc) 
-
